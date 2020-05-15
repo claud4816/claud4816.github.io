@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>stylus笔记 | 个人文档</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="前端技术及相关知识点整理归纳">
+    <link rel="preload" href="/assets/css/0.styles.a7881da7.css" as="style"><link rel="preload" href="/assets/js/app.85a124d9.js" as="script"><link rel="preload" href="/assets/js/4.5f39a6eb.js" as="script"><link rel="preload" href="/assets/js/21.fdbdcf3d.js" as="script"><link rel="prefetch" href="/assets/js/10.5f8a85f9.js"><link rel="prefetch" href="/assets/js/11.6759e947.js"><link rel="prefetch" href="/assets/js/12.458628c1.js"><link rel="prefetch" href="/assets/js/13.99044445.js"><link rel="prefetch" href="/assets/js/14.b42db835.js"><link rel="prefetch" href="/assets/js/15.a4d51a7d.js"><link rel="prefetch" href="/assets/js/16.eda4d2a3.js"><link rel="prefetch" href="/assets/js/17.c5953c8a.js"><link rel="prefetch" href="/assets/js/18.a28f816b.js"><link rel="prefetch" href="/assets/js/19.0c359756.js"><link rel="prefetch" href="/assets/js/2.12ea8054.js"><link rel="prefetch" href="/assets/js/20.16a174d3.js"><link rel="prefetch" href="/assets/js/22.83bed77f.js"><link rel="prefetch" href="/assets/js/23.cd127046.js"><link rel="prefetch" href="/assets/js/24.77432a59.js"><link rel="prefetch" href="/assets/js/3.3c007b1e.js"><link rel="prefetch" href="/assets/js/5.a0d48ae1.js"><link rel="prefetch" href="/assets/js/6.1e171dfc.js"><link rel="prefetch" href="/assets/js/7.898d1706.js"><link rel="prefetch" href="/assets/js/8.cce43762.js"><link rel="prefetch" href="/assets/js/9.d19a435f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a7881da7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Note" class="dropdown-title"><span class="title">Note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/markdown/jsBase.html" class="nav-link">
+  JS基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/webAPI.html" class="nav-link">
+  JS面向浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/jsPro.html" class="nav-link">
+  JS进阶知识
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/ECMAScript6.html" class="nav-link">
+  JSES6
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/jQuery.html" class="nav-link">
+  jQuary
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/ajax.html" class="nav-link">
+  Ajax通信
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/nodeJS.html" class="nav-link">
+  JSnode
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/wx.html" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/react.html" class="nav-link">
+  React入门
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/npm.html" class="nav-link">
+  npm使用
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/git.html" class="nav-link">
+  git使用
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/mysql.html" class="nav-link">
+  mysql了解
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/stylus.html" class="nav-link router-link-exact-active router-link-active">
+  stylus
+</a></li></ul></div></div><div class="nav-item"><a href="/custom/user.html" class="nav-link">
+  自定义页面
+</a></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/git@github.com:claud4816/claud4816.github.io.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Note" class="dropdown-title"><span class="title">Note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/markdown/jsBase.html" class="nav-link">
+  JS基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/webAPI.html" class="nav-link">
+  JS面向浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/jsPro.html" class="nav-link">
+  JS进阶知识
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/ECMAScript6.html" class="nav-link">
+  JSES6
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/jQuery.html" class="nav-link">
+  jQuary
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/ajax.html" class="nav-link">
+  Ajax通信
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/nodeJS.html" class="nav-link">
+  JSnode
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/wx.html" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/react.html" class="nav-link">
+  React入门
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/npm.html" class="nav-link">
+  npm使用
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/git.html" class="nav-link">
+  git使用
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/mysql.html" class="nav-link">
+  mysql了解
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/stylus.html" class="nav-link router-link-exact-active router-link-active">
+  stylus
+</a></li></ul></div></div><div class="nav-item"><a href="/custom/user.html" class="nav-link">
+  自定义页面
+</a></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/git@github.com:claud4816/claud4816.github.io.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>stylus笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/markdown/stylus.html#_1-安装" class="sidebar-link">1 安装</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/markdown/stylus.html#_2-选择器" class="sidebar-link">2 选择器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_2-1-排版" class="sidebar-link">2.1 排版</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_2-2-嵌套-父级引用" class="sidebar-link">2.2 嵌套&amp;父级引用</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_2-3-歧义" class="sidebar-link">2.3 歧义</a></li></ul></li><li><a href="/markdown/stylus.html#_3-变量" class="sidebar-link">3 变量</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_3-1-自定义变量" class="sidebar-link">3.1 自定义变量</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_3-2-属性查找-需要声明" class="sidebar-link">3.2 属性查找-需要声明</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_3-3-属性查找-无需声明" class="sidebar-link">3.3 属性查找-无需声明</a></li></ul></li><li><a href="/markdown/stylus.html#_4-运算符" class="sidebar-link">4 运算符</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/markdown/stylus.html#_5-mixins-混合书写" class="sidebar-link">5 mixins-混合书写</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_5-1-类似于函数定义" class="sidebar-link">5.1 类似于函数定义</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_5-2-用arguments代替默认参数" class="sidebar-link">5.2 用arguments代替默认参数</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_5-3-混合书写中可再次写混合书写" class="sidebar-link">5.3 混合书写中可再次写混合书写</a></li></ul></li><li><a href="/markdown/stylus.html#_6-function函数" class="sidebar-link">6 Function函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_6-1-默认参数" class="sidebar-link">6.1 默认参数</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_6-2-无视单位" class="sidebar-link">6.2 无视单位</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_6-3-多个返回值" class="sidebar-link">6.3 多个返回值</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_6-4-别名" class="sidebar-link">6.4 别名</a></li></ul></li><li><a href="/markdown/stylus.html#_7-stylus内置方法" class="sidebar-link">7 stylus内置方法</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/markdown/stylus.html#_8-注释" class="sidebar-link">8 注释</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/markdown/stylus.html#_9-条件判断" class="sidebar-link">9 条件判断</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_9-1-if" class="sidebar-link">9.1 if</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_9-2-unless" class="sidebar-link">9.2 unless</a></li></ul></li><li><a href="/markdown/stylus.html#_10-循环" class="sidebar-link">10 循环</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_10-1-for" class="sidebar-link">10.1 for</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_10-2-混合书写中的for循环" class="sidebar-link">10.2 混合书写中的for循环</a></li><li class="sidebar-sub-header"><a href="/markdown/stylus.html#_10-3-函数中的for循环" class="sidebar-link">10.3 函数中的for循环</a></li></ul></li><li><a href="/markdown/stylus.html#_11-import导入" class="sidebar-link">11 import导入</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/markdown/stylus.html#_12-extend继承" class="sidebar-link">12 @extend继承</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/markdown/stylus.html#_13-url-函数" class="sidebar-link">13 url()函数</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/markdown/stylus.html#_14-stylus中正常写css" class="sidebar-link">14 stylus中正常写css</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="stylus笔记"><a href="#stylus笔记" class="header-anchor">#</a> stylus笔记</h1> <p>冒号可有可无
+分号可有可无
+逗号可有可无
+括号可有可无
+变量
+插值（Interpolation）
+混合（Mixin）
+数学计算
+强制类型转换
+动态引入
+条件表达式
+迭代
+嵌套选择器
+父级引用
+Variable function calls
+词法作用域
+内置函数（超过 60 个）
+语法内函数（In-language functions）
+压缩可选
+图像内联可选
+Stylus 可执行程序
+健壮的错误报告
+单行和多行注释
+CSS 字面量
+字符转义
+TextMate 捆绑</p> <h2 id="_1-安装"><a href="#_1-安装" class="header-anchor">#</a> 1 安装</h2> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">npm</span> <span class="token function">install</span> --save stylus-loader stylus
+</code></pre></div><h2 id="_2-选择器"><a href="#_2-选择器" class="header-anchor">#</a> 2 选择器</h2> <h3 id="_2-1-排版"><a href="#_2-1-排版" class="header-anchor">#</a> 2.1 排版</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 给div加上背景色pink */</span>
+div
+  background-color pink
+</code></pre></div><h3 id="_2-2-嵌套-父级引用"><a href="#_2-2-嵌套-父级引用" class="header-anchor">#</a> 2.2 嵌套&amp;父级引用</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* &amp; 指向父级选择器 */</span>
+ul
+  li
+    color #fff
+    &amp;<span class="token punctuation">:</span>hover
+      color #000
+</code></pre></div><h3 id="_2-3-歧义"><a href="#_2-3-歧义" class="header-anchor">#</a> 2.3 歧义</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 此处负值可能引起歧义 需要加括号 */</span>
+<span class="token function">pad</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+  padding <span class="token punctuation">(</span>- n<span class="token punctuation">)</span>
+
+body
+  <span class="token function">pad</span><span class="token punctuation">(</span>5px<span class="token punctuation">)</span>
+</code></pre></div><h2 id="_3-变量"><a href="#_3-变量" class="header-anchor">#</a> 3 变量</h2> <h3 id="_3-1-自定义变量"><a href="#_3-1-自定义变量" class="header-anchor">#</a> 3.1 自定义变量</h3> <div class="language-css extra-class"><pre class="language-css"><code>fonts = Helvetica<span class="token punctuation">,</span> Arial<span class="token punctuation">,</span> sans-serif
+color = #ccc
+body
+  padding 50px
+  font 14px/1.4 fonts
+  background-color color
+
+<span class="token comment">/* 解析为 */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+  <span class="token property">font</span><span class="token punctuation">:</span> 14px/1.4 Helvetica<span class="token punctuation">,</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+  background-color #ccc
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-2-属性查找-需要声明"><a href="#_3-2-属性查找-需要声明" class="header-anchor">#</a> 3.2 属性查找-需要声明</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 适用场景:根据一个高度计算其他高度等情况 */</span>
+ul
+  width 100px
+  height $ = 200px
+  margin-top <span class="token function">-</span><span class="token punctuation">(</span>$/2<span class="token punctuation">)</span>
+<span class="token comment">/* 解析为 */</span>
+<span class="token selector">ul</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> -100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-3-属性查找-无需声明"><a href="#_3-3-属性查找-无需声明" class="header-anchor">#</a> 3.3 属性查找-无需声明</h3> <p>不需要声明变量 直接可以使用@加属性 进行引用</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 可用@直接表示height的200px 并进行运算 */</span>
+ul
+  width 100px
+  height 200px
+  margin-top @height*2
+</code></pre></div><h2 id="_4-运算符"><a href="#_4-运算符" class="header-anchor">#</a> 4 运算符</h2> <div class="language-css extra-class"><pre class="language-css"><code>body
+  <span class="token property">foo</span><span class="token punctuation">:</span> 5px + 10  //15px
+  <span class="token property">foo</span><span class="token punctuation">:</span> 2 ** 8  // 256
+  <span class="token property">foo</span><span class="token punctuation">:</span> 5px * 2 // 10px
+  <span class="token property">foo</span><span class="token punctuation">:</span> !!<span class="token string">''</span> // false
+  <span class="token property">foo</span><span class="token punctuation">:</span> foo and bar and baz  
+  <span class="token property">foo</span><span class="token punctuation">:</span> foo or bar or baz
+  <span class="token property">foo</span><span class="token punctuation">:</span> 1..5
+  <span class="token property">foo</span><span class="token punctuation">:</span> 1...5
+  <span class="token property">foo</span><span class="token punctuation">:</span> <span class="token string">'foo'</span> is a <span class="token string">'string'</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>1 2 3<span class="token punctuation">)</span> == <span class="token punctuation">(</span>1 2 3<span class="token punctuation">)</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>1 2 3<span class="token punctuation">)</span> == <span class="token punctuation">(</span>1 2<span class="token punctuation">)</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>one 1<span class="token punctuation">)</span> <span class="token punctuation">(</span>two 2<span class="token punctuation">)</span><span class="token punctuation">)</span> == <span class="token punctuation">(</span><span class="token punctuation">(</span>one 1<span class="token punctuation">)</span> <span class="token punctuation">(</span>two 2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>one 1<span class="token punctuation">)</span> <span class="token punctuation">(</span>two 2<span class="token punctuation">)</span><span class="token punctuation">)</span> == <span class="token punctuation">(</span><span class="token punctuation">(</span>one 1<span class="token punctuation">)</span> <span class="token punctuation">(</span>two<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>one 1<span class="token punctuation">)</span> <span class="token punctuation">(</span>two 2<span class="token punctuation">)</span><span class="token punctuation">)</span>[0]
+  <span class="token property">foo</span><span class="token punctuation">:</span> 3 in <span class="token punctuation">(</span>1 2 3 4<span class="token punctuation">)</span>
+</code></pre></div><h2 id="_5-mixins-混合书写"><a href="#_5-mixins-混合书写" class="header-anchor">#</a> 5 mixins-混合书写</h2> <h3 id="_5-1-类似于函数定义"><a href="#_5-1-类似于函数定义" class="header-anchor">#</a> 5.1 类似于函数定义</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">border-radius</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+
+form input[type=button]
+  <span class="token function">border-radius</span><span class="token punctuation">(</span>5px<span class="token punctuation">)</span>
+  <span class="token comment">/* 此处括号可忽略 */</span>
+  border-radius 5px
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 定义类函数 */</span>
+<span class="token function">set-font-ize</span><span class="token punctuation">(</span>size<span class="token punctuation">,</span> color<span class="token punctuation">,</span> weight<span class="token punctuation">)</span>
+  font-size size
+  color color
+  font-weight weight
+<span class="token comment">/* 在a标签上使用类函数 */</span>
+a
+  <span class="token function">set-font-ize</span><span class="token punctuation">(</span>20px<span class="token punctuation">,</span> pink<span class="token punctuation">,</span> 700<span class="token punctuation">)</span>
+</code></pre></div><h3 id="_5-2-用arguments代替默认参数"><a href="#_5-2-用arguments代替默认参数" class="header-anchor">#</a> 5.2 用arguments代替默认参数</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">set-radius</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token property">-webkit-border-radius</span><span class="token punctuation">:</span> arguments
+  <span class="token property">-moz-border-radius</span><span class="token punctuation">:</span> arguments
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> arguments
+ul
+  <span class="token function">set-radius</span><span class="token punctuation">(</span>5px 10px<span class="token punctuation">)</span>
+</code></pre></div><h3 id="_5-3-混合书写中可再次写混合书写"><a href="#_5-3-混合书写中可再次写混合书写" class="header-anchor">#</a> 5.3 混合书写中可再次写混合书写</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">inline-list</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  li
+    display inline
+
+<span class="token function">comma-list</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">inline-list</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  li
+    &amp;<span class="token punctuation">:</span>after
+      content <span class="token string">', '</span>
+    &amp;<span class="token punctuation">:</span><span class="token property">last-child</span><span class="token punctuation">:</span>after
+      content <span class="token string">''</span>
+
+ul
+  <span class="token function">comma-list</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">/* 编译 */</span>
+<span class="token selector">ul li:after</span> <span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;, &quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">ul li:last-child:after</span> <span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">ul li</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_6-function函数"><a href="#_6-function函数" class="header-anchor">#</a> 6 Function函数</h2> <h3 id="_6-1-默认参数"><a href="#_6-1-默认参数" class="header-anchor">#</a> 6.1 默认参数</h3> <p>使用方法与mixins一致 但是函数有返回值</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 可以指定默认参数 */</span>
+<span class="token function">add</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b = <span class="token function">unit</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> px<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  a + b
+body
+  padding <span class="token function">add</span><span class="token punctuation">(</span>10px<span class="token punctuation">,</span> 5<span class="token punctuation">)</span>
+<span class="token comment">/* 解析 */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>此处unit(a, b)是stylus内置函数 默认拼接a b参数 a为数值 若送入15px 会被识别为15 b为单位</p></div> <h3 id="_6-2-无视单位"><a href="#_6-2-无视单位" class="header-anchor">#</a> 6.2 无视单位</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">add</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b = a<span class="token punctuation">)</span>
+  a = <span class="token function">unit</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> px<span class="token punctuation">)</span>
+  b = <span class="token function">unit</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> px<span class="token punctuation">)</span>
+  a + b
+li
+  padding <span class="token function">add</span><span class="token punctuation">(</span>15%<span class="token punctuation">,</span> 10deg<span class="token punctuation">)</span>
+</code></pre></div><h3 id="_6-3-多个返回值"><a href="#_6-3-多个返回值" class="header-anchor">#</a> 6.3 多个返回值</h3> <p>变量声明可使用</p> <div class="language-css extra-class"><pre class="language-css"><code>sizes = 15px 10px 5px 0
+
+li
+  font-size sizes[0] //15px
+  font-size sizes[1] //10px
+</code></pre></div><p>函数中也可使用</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">sizes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+ 15px 10px
+
+<span class="token function">sizes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>[0]
+<span class="token comment">/* 注意:单纯变量时需要带括号(normal bold)或者写return */</span>
+<span class="token function">weight</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  return normal bold
+body
+  font-weight <span class="token function">weight</span><span class="token punctuation">(</span><span class="token punctuation">)</span>[1]
+</code></pre></div><h3 id="_6-4-别名"><a href="#_6-4-别名" class="header-anchor">#</a> 6.4 别名</h3> <p>注意: 与js不同 此处起了别名 原名仍旧可用</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">add</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+  a + b
+plus = add
+
+<span class="token function">plus</span><span class="token punctuation">(</span>1<span class="token punctuation">,</span> 2<span class="token punctuation">)</span>
+</code></pre></div><h2 id="_7-stylus内置方法"><a href="#_7-stylus内置方法" class="header-anchor">#</a> 7 stylus内置方法</h2> <p><a href="https://www.zhangxinxu.com/jq/stylus/bifs.php" target="_blank" rel="noopener noreferrer">详情地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_8-注释"><a href="#_8-注释" class="header-anchor">#</a> 8 注释</h2> <p>单行注释</p> <div class="language-css extra-class"><pre class="language-css"><code>// 我是注释
+</code></pre></div><p>多行注释</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/*
+ * 我是注释
+ */</span>
+</code></pre></div><p>多行缓冲注释</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/*!
+ * stylus编译时不进行压缩 直接输出
+ */</span>
+</code></pre></div><h2 id="_9-条件判断"><a href="#_9-条件判断" class="header-anchor">#</a> 9 条件判断</h2> <h3 id="_9-1-if"><a href="#_9-1-if" class="header-anchor">#</a> 9.1 if</h3> <div class="language-css extra-class"><pre class="language-css"><code>lock = false
+body
+  if lock
+    padding 0
+  else
+    padding 100
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token function">stringish</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span>
+  if val is a <span class="token string">'string'</span> or val is a <span class="token string">'ident'</span>
+    yes
+  else
+    no
+<span class="token function">stringish</span><span class="token punctuation">(</span><span class="token string">'yay'</span><span class="token punctuation">)</span> == yes // =&gt; true
+<span class="token function">stringish</span><span class="token punctuation">(</span>yay<span class="token punctuation">)</span> == yes // =&gt; true
+<span class="token function">stringish</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span> == no // =&gt; true
+
+<span class="token function">compare</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+  if a &gt; b
+    higher
+  else if a &lt; b
+    lower
+  else
+    equal
+<span class="token function">compare</span><span class="token punctuation">(</span>5<span class="token punctuation">,</span> 2<span class="token punctuation">)</span> // =&gt; higher
+<span class="token function">compare</span><span class="token punctuation">(</span>1<span class="token punctuation">,</span> 5<span class="token punctuation">)</span> // =&gt; lower
+<span class="token function">compare</span><span class="token punctuation">(</span>10<span class="token punctuation">,</span> 10<span class="token punctuation">)</span> // =&gt; equal
+</code></pre></div><h3 id="_9-2-unless"><a href="#_9-2-unless" class="header-anchor">#</a> 9.2 unless</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 如果lock是defined和false 就替换padding为margin 相当于if判断条件的反转 */</span>
+lock = true
+
+unless lock is defined and lock
+  <span class="token function">padding</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+    margin y x
+
+body
+  padding 5px 10px
+</code></pre></div><h2 id="_10-循环"><a href="#_10-循环" class="header-anchor">#</a> 10 循环</h2> <h3 id="_10-1-for"><a href="#_10-1-for" class="header-anchor">#</a> 10.1 for</h3> <div class="language-css extra-class"><pre class="language-css"><code>table
+  for index in 1 2 3 4 5
+    <span class="token property">tr</span><span class="token punctuation">:</span><span class="token function">nth-child</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span>
+      height index * 30px
+<span class="token comment">/* 编译为 */</span>
+<span class="token selector">table tr:nth-child(index)</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">table tr:nth-child(index)</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 60px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">table tr:nth-child(index)</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 90px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">table tr:nth-child(index)</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 120px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">table tr:nth-child(index)</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 150px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+body
+  for index in 1 2 3 4 5
+    foo index
+<span class="token comment">/* 编译为 */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> 3<span class="token punctuation">;</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> 4<span class="token punctuation">;</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> 5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/* item,index */</span>
+body
+  font = Impact Arial sans-serif
+  for item<span class="token punctuation">,</span> index in font
+    foo index item
+<span class="token comment">/* 编译为 */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> 0 Impact<span class="token punctuation">;</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> 1 Arial<span class="token punctuation">;</span>
+  <span class="token property">foo</span><span class="token punctuation">:</span> 2 sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_10-2-混合书写中的for循环"><a href="#_10-2-混合书写中的for循环" class="header-anchor">#</a> 10.2 混合书写中的for循环</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">apply(props)
+  props = arguments
+  if length(arguments) &gt; 1
+    for prop in props</span>
+      <span class="token punctuation">{</span>prop[0]<span class="token punctuation">}</span> prop[1]
+
+body
+  <span class="token function">apply</span><span class="token punctuation">(</span>one 1<span class="token punctuation">,</span> two 2<span class="token punctuation">,</span> three 3<span class="token punctuation">)</span>
+
+body
+  list = <span class="token punctuation">(</span>one 1<span class="token punctuation">)</span> <span class="token punctuation">(</span>two 2<span class="token punctuation">)</span> <span class="token punctuation">(</span>three 3<span class="token punctuation">)</span>
+  <span class="token function">apply</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span>
+<span class="token comment">/* 编译为 */</span>
+<span class="token selector">body[data-v-227179ae]</span> <span class="token punctuation">{</span>
+  <span class="token property">one</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+  <span class="token property">two</span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span>
+  <span class="token property">three</span><span class="token punctuation">:</span> 3<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">body[data-v-227179ae]</span> <span class="token punctuation">{</span>
+  <span class="token property">one</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+  <span class="token property">two</span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span>
+  <span class="token property">three</span><span class="token punctuation">:</span> 3<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_10-3-函数中的for循环"><a href="#_10-3-函数中的for循环" class="header-anchor">#</a> 10.3 函数中的for循环</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">sum</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span>
+  sum = 0
+  for n in nums
+    sum += n
+
+<span class="token function">sum</span><span class="token punctuation">(</span>1 2 3<span class="token punctuation">)</span>
+// =&gt; 6
+</code></pre></div><h2 id="_11-import导入"><a href="#_11-import导入" class="header-anchor">#</a> 11 import导入</h2> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 加css后缀 正常识别为css文件*/</span>
+@import <span class="token string">&quot;reset.css&quot;</span>
+<span class="token comment">/* 不加css后缀 会被识别为stylus文件 此处不加引号也可@import reset */</span>
+@import <span class="token string">'reset'</span>
+
+</code></pre></div><h2 id="_12-extend继承"><a href="#_12-extend继承" class="header-anchor">#</a> 12 @extend继承</h2> <p>引用father的属性 直接给son 写法上更简练 也可进行多层嵌套</p> <div class="language-css extra-class"><pre class="language-css"><code>.father
+  padding 100px
+  margin 100px
+.son
+  @extend .father
+  color red
+.grandson
+  @extend .son
+  font-size 16px
+</code></pre></div><p>要继承多层级嵌套的属性 需要从头开始写</p> <div class="language-css extra-class"><pre class="language-css"><code>div
+  ul
+    li
+      width 100px
+      height 100px
+<span class="token comment">/* 此处写成 @extend ul li不行 光写li 也不行 */</span>
+.other
+  @extend div ul li
+  color red
+</code></pre></div><h2 id="_13-url-函数"><a href="#_13-url-函数" class="header-anchor">#</a> 13 url()函数</h2> <p>stylus替换了原本css的url() 使用了base64 Data URIs有条件地内联它们</p> <p>在使用webpack中 此处作用不大</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">bg-image</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+  background-image <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>'../assets/images/' + url<span class="token punctuation">)</span></span>
+div
+  <span class="token function">bg-image</span><span class="token punctuation">(</span><span class="token string">'waring.png'</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="_14-stylus中正常写css"><a href="#_14-stylus中正常写css" class="header-anchor">#</a> 14 stylus中正常写css</h2> <p>若遇到stylus无法解决的问题 可以在stylus中直接写css 也可以写在@css中</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@css</span></span> <span class="token punctuation">{</span>
+  <span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">font</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/git@github.com:claud4816/claud4816.github.io.git/edit/master/markdown/stylus.md" target="_blank" rel="noopener noreferrer">编辑此页面</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.85a124d9.js" defer></script><script src="/assets/js/4.5f39a6eb.js" defer></script><script src="/assets/js/21.fdbdcf3d.js" defer></script>
+  </body>
+</html>
